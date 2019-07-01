@@ -2,17 +2,87 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Current Weather</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Current Weather</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
-<body>
 
-	<!-- replace this html -->
-	<div class="container">
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <a type="button" class="btn btn-light" href="/weather/comparison"><span style="font-size: 2em">🔍</span></a>
+      </div>
+      <div class="col-6">
+        <a type="button" class="btn btn-light float-right" href="/weather/comparison"><span style="font-size: 2em">⚙️</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-6">
+            <br />
+            <br />
+            <br />
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Berkeley<br /><small>CA, USA</small></h5>
+                <p class="card-text">
+                  <span style="font-size: 4em">☀️</span><br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Oakland</h5>
+                <p class="card-text">
+                  <p>
+                    <span style="font-size: 3em">☀️</span>
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <!-- FIXME: This is sorta weird. -->
+            <br />
+            <p id="knob">
+              <a class="float" href="/weather/forecast"><span style="font-size: 4em">→</span></a>
+            </p>
+          </div>
+          <div class="col-6">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">San Fran.</h5>
+                <p class="card-text">
+                   <span style="font-size: 2em">☁️</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- replace this html -->
+  <!-- <div class="container">
 		<div class="jumbotron text-light bg-primary">
 			<h1>Congratulations</h1>
 			<p>You've set your environment up correctly!</p>
@@ -21,14 +91,9 @@
 		<a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
 		<a href="/weather/forecast/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast with alert</a>
 		<a href="/weather/comparison/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison</a>
-		<a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>
-	</div>
-	
-	<!-- /replace this html -->
+		<a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>	</div> -->
+
+  <!-- /replace this html -->
 </body>
+
 </html>
-
-
-
-
-
