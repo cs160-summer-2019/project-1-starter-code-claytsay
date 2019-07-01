@@ -1,3 +1,38 @@
-li {
-    color: green;
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.alert-icon {
+  font-size: 3em;
+}
+
+#cone {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid red;
+  border-radius: 50%;
+}
+
+/* Sources: 
+  - https://css-tricks.com/the-shapes-of-css/
+  - https://www.w3schools.com/howto/howto_css_aspect_ratio.asp
+*/
+#knob {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+  background: gray;
+  border-radius: 50%
+}
+
+#knob:before {
+  position: absolute;
 }

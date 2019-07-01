@@ -2,14 +2,58 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Comparison - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Comparison - Alert!</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your comparison interface with alert here -->
+
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-row align-items-center">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-append">
+              <div class="input-group-text">🔍</div>
+            </div>
+            <button type="button" class="btn btn-light" href="/weather/forecast/alert">❌</button>
+          </div>
+        </div>
+      </form>
+      <br/>
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <button type="button" class="btn btn-default float-right">➖</button>
+            <span class="float-right alert-icon">⚠️</span>
+            <div class="float-right"></div>
+            <h5 class="card-title">Berkeley</h5>
+            <p class="card-text"><b>40&deg;</b> ⛈️</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <button type="button" class="btn btn-default float-right">➖</button>
+            <h5 class="card-title">Oakland</h5>
+            <p class="card-text"><b>50&deg;</b> ☁️</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <button type="button" class="btn btn-default float-right">➖</button>
+            <h5 class="card-title">San Francisco</h5>
+            <p class="card-text"><b>42&deg;</b> ☁️</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </body>
+
 </html>
